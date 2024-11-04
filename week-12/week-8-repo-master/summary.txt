@@ -1,0 +1,44 @@
+there is a full stack application and there are many comman things that requires 
+both front and back end like
+import { z } from "zod";
+export const signupInput = z.object({
+    username: z.string(),
+    password: z.string()
+})
+console.log("hi there");
+
+export type SignupParams = z.infer<typeof signupInput>;
+this is the way 
+way is that there is a comman folder in which all the comman files will be present
+this comman folder will be uploaded on the npm account
+only upload the folder on the npm that is useful like ts file is not important
+src folder is not 
+
+add .npmignore file
+vi .npmignore
+
+ignore any file
+echo "src/" > .npmignore                    
+>> echo "*" >> .npmignore//not
+>> echo "!dist/" >> .npmignore
+
+
+npmm pack to show which file folder are present on the account
+
+
+publish any folder
+npm publish --access=public  
+
+to update the version
+npm version patch
+
+install 
+npm i @p434680/common 
+
+import {xyg} from '@p434680/omman'
+one error will come 
+because js file will be exported but type of 
+impoted thing is not found
+so solution is declearation file=>types of external modules in ts
+
+ "declaration": true
